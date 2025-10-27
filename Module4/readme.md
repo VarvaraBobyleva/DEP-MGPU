@@ -3,3 +3,5 @@
 [Отчет по практической работе 2.2](./БД_251м_Бобылева_Отчет.pdf)
 
 [Архив проекта superstore_dwh](./superstore_dwh.zip)
+
+[Lineage_Graf проекта](./Lineage_Graf)
