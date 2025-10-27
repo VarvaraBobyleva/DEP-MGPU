@@ -4,4 +4,4 @@
 
 [Архив проекта superstore_dwh](./superstore_dwh.zip)
 
-[Lineage_Graf проекта](./Lineage_Graf)
+[Lineage_Graf проекта](./Lineage_Graf.jpeg)
