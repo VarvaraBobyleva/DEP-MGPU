@@ -2,7 +2,7 @@
 
 [Отчет по выполнению проекта](./БД_251м_Бобылева_Отчет.pdf)
 
-[Результат построения дашборда в DataLens](https://datalens.ru/6hv7utxtjwbyr?_no_controls=1&tab=EV)
+[Результат построения дашборда в DataLens](https://datalens.yandex/6hv7utxtjwbyr)
 <hr>
 
 Исходные файлы:
