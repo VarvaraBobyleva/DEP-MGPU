@@ -12,4 +12,4 @@
 
 <h2>Результат построения дашборда в DataLens</h2>
 
-Шборд представлен на [странице](https://datalens.ru/itkerzarz2fi3).
+Дашборд представлен на [странице](https://datalens.ru/itkerzarz2fi3).
