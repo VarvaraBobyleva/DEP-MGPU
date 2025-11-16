@@ -2,4 +2,5 @@
 <h3>Студент: Бобылева В.В <br> Вариант: 2</h3>
 
 [Рабочая тетрадь с решением инд. заданий BI](bi_lw_01_pandas_sqlite_student.ipynb)<br>
+[База данных для работы с тетрадью](chinook.db)<br>
 [Рабочая тетрадь с решением всех заданий workbook](pandas_workbook_student.ipynb)
