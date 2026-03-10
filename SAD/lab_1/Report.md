@@ -27,6 +27,7 @@ df.printSchema()
 # Проверка на наличие пустых значений (NULL)
 from pyspark.sql.functions import col, count, when
 df.select([count(when(col(c).isNull(), c)).alias(c) for c in df.columns]).show()
+```
 
 **Результат:** Типы данных определены корректно. Пропуски в критически важных полях (Transaction Amount, Timestamp) отсутствуют, данные готовы к анализу.
 
