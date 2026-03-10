@@ -35,8 +35,10 @@ df.select([count(when(col(c).isNull(), c)).alias(c) for c in df.columns]).show()
 #### Задание 1: Фильтрация и сегментация
 С помощью Spark Core был сформирован список транзакций со статусом `Failed`. Это позволяет банку выявлять проблемные узлы и своевременно реагировать на технические сбои у клиентов.
 
+
 | Sender Account ID | Transaction Amount | Transaction Status |
 | :--- | :--- | :--- |
 | ACC_10003 |	980.9	| Failed |
 | ACC_10007 |	770.0	| Failed |
 | ACC_4	| 300.0	| Failed |
+
