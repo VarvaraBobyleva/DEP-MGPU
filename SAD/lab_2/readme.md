@@ -3,7 +3,7 @@
 ---
 
 # Отчет по Лабораторной работе №2: Polyglot Persistence
-**Бизнес-кейс:** Аналитическое ядро стриминговой платформы (аналог Netflix/Кинопоиск).
+**Бизнес-кейс:** Разработка аналитического ядра для стриминговой платформы (аналог Netflix/Кинопоиск).
 
 ---
 
@@ -28,11 +28,11 @@
 
 **Скриншоты интерфейсов:**
 *   `[screenshots/redis.png]` — Интерфейс Redis Commander (просмотр кэша).
-*   ![redis](screenshots/redis.png)
+  ![redis](screenshots/redis.png)
 *   `[screenshots/mongo.png]` — Интерфейс Mongo Express (управление каталогом).
-*   ![mongo](screenshots/mongo.png)
+  ![mongo](screenshots/mongo.png)
 *   `[screenshots/graf_import.png]` — Интерфейс GraphDB с репозиторием `movies_repo`.
-*   ![graf](screenshots/graf_import.png)
+  ![graf](screenshots/graf_import.png)
 
 ## 3. Выполнение Задания 1 (NoSQL)
 
@@ -58,4 +58,40 @@ CREATE TABLE IF NOT EXISTS streaming_logs.logs (
 ---
 
 ## 4. Выполнение Задания 2 (GraphDB / SPARQL)
+Для поиска фильмов, где режиссер и главный актер — одно лицо (исключая ч/б ленты), использован SPARQL.
+**SPARQL-запрос:**
+```sparql
+PREFIX schema: <http://schema.org>
+SELECT ?movieTitle ?personName
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieTitle ;
+           schema:director ?person ;
+           schema:actor ?person ;
+           schema:isBlackAndWhite "false"^^xsd:boolean .
+    ?person schema:name ?personName .
+}
+```
+![select](screenshots/graf_select.png)
+
+---
+
+## 5. Выполнение Задания 3 (Analytics)
+Анализ проведен на основе данных из MongoDB и Cassandra через Streamlit.
+**Бизнес-интерпретация:**
+* **Корреляция**: Анализ показал, что средний рейтинг ч/б фильмов (~8.3) близок к цветным (~8.6).
+* **Метрика**: Несмотря на высокий рейтинг, ч/б фильмы имеют на 60% меньше просмотров (логи Cassandra).
+
+![dash](screenshots/dashboard.png)
+![dash_log](screenshots/dash_log.png)
+
+**Вывод**: Ч/Б формат воспринимается как элитарный/классический контент, имеющий высокий рейтинг, но низкую массовую популярность.
+
+---
+
+## 6. Выводы
+Полиглотный подход позволил использовать сильные стороны каждой БД:
+1. **GraphDB** устранила проблему "Join-Hell" при поиске связей актеров.
+2. **Cassandra** обеспечила масштабируемость логов без замедления работы основного каталога в **MongoDB**.
+3. **Redis** (проверен через Redis Commander) готов к хранению быстрых сессий пользователей.
 
