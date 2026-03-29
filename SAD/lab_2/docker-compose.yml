@@ -1,0 +1,43 @@
+version: '3.8'
+services:
+  # MongoDB + Админка
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongodb
+
+  # Redis + Админка
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: redis-commander
+    ports:
+      - "8082:8081"
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+
+  # Cassandra (Web UI для неё очень тяжелый, обычно используют CLI)
+  cassandra:
+    image: cassandra:latest
+    container_name: cassandra
+    ports:
+      - "9042:9042"
+
+  # GraphDB (Интерфейс встроен сразу)
+  graphdb:
+    image: khaller/graphdb-free:latest
+    container_name: graphdb
+    ports:
+      - "7200:7200"

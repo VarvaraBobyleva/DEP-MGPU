@@ -1,0 +1,27 @@
+@prefix ex: <http://example.org> .
+@prefix schema: <http://schema.org> .
+@prefix xsd: <http://www.w3.org> .
+
+# Режиссеры-актеры (Цветные)
+ex:movie101 a schema:Movie ; schema:name "Inception" ; schema:director ex:personNolan ; schema:actor ex:personNolan ; schema:isBlackAndWhite "false"^^xsd:boolean .
+ex:movie106 a schema:Movie ; schema:name "Pulp Fiction" ; schema:director ex:personTarantino ; schema:actor ex:personTarantino ; schema:isBlackAndWhite "false"^^xsd:boolean .
+ex:movie108 a schema:Movie ; schema:name "The Dark Knight" ; schema:director ex:personNolan ; schema:actor ex:personNolan ; schema:isBlackAndWhite "false"^^xsd:boolean .
+
+# Режиссеры-актеры (Ч/Б)
+ex:movie102 a schema:Movie ; schema:name "Schindler's List" ; schema:director ex:personSpielberg ; schema:actor ex:personSpielberg ; schema:isBlackAndWhite "true"^^xsd:boolean .
+ex:movie107 a schema:Movie ; schema:name "Psycho" ; schema:director ex:personHitchcock ; schema:actor ex:personHitchcock ; schema:isBlackAndWhite "true"^^xsd:boolean .
+ex:movie109 a schema:Movie ; schema:name "Citizen Kane" ; schema:director ex:personWelles ; schema:actor ex:personWelles ; schema:isBlackAndWhite "true"^^xsd:boolean .
+ex:movie112 a schema:Movie ; schema:name "Seven Samurai" ; schema:director ex:personKurosawa ; schema:actor ex:personKurosawa ; schema:isBlackAndWhite "true"^^xsd:boolean .
+
+# Обычные фильмы
+ex:movie104 a schema:Movie ; schema:name "Interstellar" ; schema:director ex:personNolan ; schema:actor ex:personMcConaughey ; schema:isBlackAndWhite "false"^^xsd:boolean .
+ex:movie105 a schema:Movie ; schema:name "The Lighthouse" ; schema:director ex:personEggers ; schema:actor ex:personPattinson ; schema:isBlackAndWhite "true"^^xsd:boolean .
+ex:movie110 a schema:Movie ; schema:name "Mad Max" ; schema:director ex:personMiller ; schema:actor ex:personHardy ; schema:isBlackAndWhite "false"^^xsd:boolean .
+
+# Персоны
+ex:personNolan a schema:Person ; schema:name "Christopher Nolan" .
+ex:personTarantino a schema:Person ; schema:name "Quentin Tarantino" .
+ex:personSpielberg a schema:Person ; schema:name "Steven Spielberg" .
+ex:personHitchcock a schema:Person ; schema:name "Alfred Hitchcock" .
+ex:personWelles a schema:Person ; schema:name "Orson Welles" .
+ex:personKurosawa a schema:Person ; schema:name "Akira Kurosawa" .

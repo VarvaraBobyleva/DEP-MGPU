@@ -1,0 +1,13 @@
+PREFIX schema: <http://schema.org>
+PREFIX xsd: <http://www.w3.org>
+
+SELECT ?movieTitle ?personName
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieTitle ;
+           schema:director ?person ;
+           schema:actor ?person ;
+           schema:isBlackAndWhite "false"^^xsd:boolean .
+    
+    ?person schema:name ?personName .
+}
