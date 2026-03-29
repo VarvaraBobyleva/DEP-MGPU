@@ -44,6 +44,7 @@
 
 ### Cassandra: Логирование
 Создана таблица `logs` для фиксации действий (`scripts/cassandra.cql`).
+
 **CQL-запрос (Schema):**
 ```sql
 CREATE TABLE IF NOT EXISTS streaming_logs.logs (
@@ -61,6 +62,7 @@ CREATE TABLE IF NOT EXISTS streaming_logs.logs (
 
 ## 4. Выполнение Задания 2 (GraphDB / SPARQL)
 Для поиска фильмов, где режиссер и главный актер — одно лицо (исключая ч/б ленты), использован SPARQL (`scripts/queries.sparql`).
+
 **SPARQL-запрос:**
 ```sparql
 PREFIX schema: <http://schema.org>
