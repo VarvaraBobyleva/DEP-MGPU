@@ -11,9 +11,10 @@
 ## Инструкция по запуску
 1. Склонируйте репозиторий.
 2. Поместите файл `endomondoHR.json` в папку `work/data/`.
-> Файл можно скачать (по ссылке)[https://drive.google.com/file/d/1yiAp1fFDy3wSqUR0X_btCZPtuczbLwCe/view]
+> Файл можно скачать [по ссылке](https://drive.google.com/file/d/1yiAp1fFDy3wSqUR0X_btCZPtuczbLwCe/view)
 3. Запустите окружение с помощью Docker:
    ```bash
    docker-compose up
 ```
 4. Откройте Jupyter Lab по адресу http://localhost:10000 и запустите ноутбук lab_03_ml.ipynb
+
