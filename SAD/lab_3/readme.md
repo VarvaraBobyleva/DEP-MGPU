@@ -13,7 +13,7 @@
 - **Модель:** Random Forest (Бинарная классификация).
 
 ## Инструкция по запуску
-1. Склонируйте репозиторий.
+1. Склонируйте репозиторий [https://github.com/BosenkoTM/PySpark.git](https://github.com/BosenkoTM/PySpark.git)
 2. Поместите файл `endomondoHR.json` в папку `work/data/`.
 > Файл можно скачать [по ссылке](https://drive.google.com/file/d/1yiAp1fFDy3wSqUR0X_btCZPtuczbLwCe/view)
 3. Запустите окружение с помощью Docker:
