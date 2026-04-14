@@ -16,5 +16,8 @@
    ```bash
    docker-compose up
 ```
-4. Откройте Jupyter Lab по адресу http://localhost:10000 и запустите ноутбук lab_03_ml.ipynb
+4. Откройте Jupyter Lab по адресу http://localhost:10000 и запустите ноутбук [lab_03_ml.ipynb](script/lab_03_ml.ipynb)
 
+## Отчет по выполненной работе
+
+[Ссылка на отчет в репозитории](./Report.md)
