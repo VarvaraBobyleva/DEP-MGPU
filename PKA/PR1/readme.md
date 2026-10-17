@@ -3,8 +3,6 @@
 **Дисциплина:** «Программные средства сбора, консолидации и аналитики данных».
 **Вариант 2 · E-commerce:** «Ценовое позиционирование в нише деловой литературы».
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<ваш-логин>/<репозиторий>/blob/main/pw_01_variant2_completed.ipynb)
-
 | | |
 |---|---|
 | **API** | «Работа в России» (`opendata.trudvsem.ru`), запрос «аналитик маркетплейсов», без ключа |
