@@ -15,7 +15,7 @@
 
 | Файл / папка | Что это |
 |---|---|
-| [`lr1_playwright_variant2.ipynb`](lr1_playwright_variant2.ipynb) | Основной ноутбук со всеми выводами ячеек и комментариями к шагам |
+| [`ЛР1_Playwright_Selenium_вариант2.ipynb`](ЛР1_Playwright_Selenium_вариант2.ipynb) | Основной ноутбук со всеми выводами ячеек и комментариями к шагам |
 | [`results/lr1_variant02_stocks.xlsx`](results/lr1_variant02_stocks.xlsx) | Очищенные данные: листы `data`, `by_sector`, `quality` |
 | [`results/page.png`](results/page.png) | Скриншот полной загруженной витрины (30 из 30 строк), доказательство сбора |
 | [`results/page_scroll.png`](results/page_scroll.png) | Скриншот ленты, собранной прокруткой (задание со звёздочкой B) |
@@ -23,7 +23,7 @@
 
 ## Как запустить
 
-1. Нажмите кнопку **Open in Colab** выше или откройте ноутбук в Jupyter.
+1. Скачайте файл [`ЛР1_Playwright_Selenium_вариант2.ipynb`](ЛР1_Playwright_Selenium_вариант2.ipynb) и откройте ноутбук в Jupyter.
 2. В ячейке «Шаг 1» проверьте параметры: `VARIANT = 2`, `ENGINE = "playwright"`, `USE_LIVE_TARGET = False`.
 3. Выполните **«Среда выполнения» → «Выполнить все»**. Ячейки идут строго сверху вниз, Chromium ставится автоматически (1–2 минуты).
 
