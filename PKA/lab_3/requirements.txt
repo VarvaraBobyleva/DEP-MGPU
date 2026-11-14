@@ -1,0 +1,6 @@
+# Dependencies installed by the Airflow services in docker-compose.yml.
+pandas
+kaggle
+kagglehub
+psycopg2-binary
+apache-airflow-providers-postgres
